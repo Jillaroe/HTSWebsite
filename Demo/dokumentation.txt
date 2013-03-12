@@ -25,7 +25,7 @@ Kurs
 *namn
 *betyg
 
-Medelanden
+Meddelanden
 *id
 *rubrik
 *text
