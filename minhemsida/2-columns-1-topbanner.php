@@ -1,7 +1,4 @@
-<?php
-include '../minhemsida/connect.php';
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
     <head>
@@ -37,32 +34,9 @@ include '../minhemsida/connect.php';
             </div>
             <div id="center-right">
 				Mitten och höger kolumnen!!
-				
                 <div id="info">
 				<h1 class="dokument-item-header"> Webbsidans rubrik</h1>
 				<p class="info">Inledning på webbsidan.</p>
-				
-         <?php
-		 $query = "SELECT * FROM kost";
-         //echo '<em> ' . $query . ' </em>';
-         $result = mysql_query($query);
-         if ($result === false) {
-	         echo '<strong> Error when you asked a question to your databas. ' . mysql_errno . ' : <br />' . mysql_error . '</strong>';
-        }
-
-         $num=mysql_numrows($result);
-         if($num==0) {
-             echo '<strong>Your question is empty</strong>';
-         }
-         else {
-             echo "<ul>";
-             for ($i=0;$i<$num;$i++) {
-                 $temp = mysql_fetch_array($result);
-	             echo "<li>" . $temp["Proteiner"] . " : " . $temp["Fetter"] .  " : " . $temp["Kolhydrater"]. "</li>";
-             }
-             echo "</ul>";
-        }
-?>
 </div>
 </div>
 

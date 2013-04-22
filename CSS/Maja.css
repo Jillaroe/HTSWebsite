@@ -17,12 +17,12 @@ h1 {
 
 /* background */
 body{
-	background-color: #101010;
+	background-color:#FFFFFF;
 }
 
 /* column */
 #content, #left, #right, #frame, #footer {
-	background: #000000;
+	background: #FFFFFF;
 	}
 	
 /* Front */
@@ -148,7 +148,7 @@ body{
    padding: 0; 
    float: left; 
    width: 100%; 
-   background: #99CC99; 
+   background: #101010; 
    font: 70% Verdana, Helvetica, sans-serif;
 }
 
