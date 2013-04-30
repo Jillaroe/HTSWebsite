@@ -5,10 +5,10 @@ include '../minhemsida/connect.php';
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
     <head>
-        <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html charset=latin-1" />
         <link rel="stylesheet" title="magnum" type="text/css" href="../CSS/Maja.css" />
 		<link rel="alternate stylesheet" title="none" type="text/css" href="../CSS/empty.css.css" />	  
-        <title>Skriv namnet på sidan här!</title>	
+        <title>Work In Progress</title>	
     </head>
     <body>
 	<img src="">
@@ -19,16 +19,14 @@ include '../minhemsida/connect.php';
 			   <a href="ovningar.php"><img src="knapp1.png"/></a>
 						<a href="kost.php"><img src="knapp2.png"/><a/>
 						<a href="kondition.php"><img src="knapp3.png"/></a>
-						<img src="knapp4.png"/></a> </div>
+						<a href="index2.php"><img src="knapp4.png"/></a> </div>
             </div>
             <div id="left">
 					<div class="dokument-item">
-						Vänster kolumn! <p>
-						<div class="meny">
-						<li><img style="float: left;" src="loggain.png"/>
-						<li><img style="float: right;" src="registrera.png"/>
-						<div style = "text-align:center;"/>	
-						</div>
+						Du är inloggad <p>
+						<div>
+						
+
 <ul>
 <div>
 </ul>
