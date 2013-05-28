@@ -1,6 +1,12 @@
 <?php
 include '../minhemsida/connect.php';
 ?>
+<?php
+session_start();
+if(!isset($_SESSION['session_user'])){
+	header('Location: login.php');
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
@@ -15,7 +21,7 @@ include '../minhemsida/connect.php';
         <div id="content">
             <div id="top">
                <div id="banner" >
-			   <div align="center"><img src="banner1.png"> 
+			   <div align="center"><img src="banner1.png" height="100" width="400"> 
 			   <a href="ovningar.php"><img src="knapp1.png"/></a>
 						<a href="kost.php"><img src="knapp2.png"/><a/>
 						<a href="kondition.php"><img src="knapp3.png"/></a>

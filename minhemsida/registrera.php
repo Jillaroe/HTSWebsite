@@ -1,6 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['session_user'])){
+	header('Location: login.php');
+}
+?>
+<?php
+include '../minhemsida/connect.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
+
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">    
     <head>
         <meta http-equiv="Content-Type" content="text/html charset=latin-1" />
         <link rel="stylesheet" title="magnum" type="text/css" href="../CSS/Maja.css" />
@@ -12,7 +22,7 @@
         <div id="content">
             <div id="top">
                <div id="banner" >
-			   <div align="center"><img src="banner1.png"> 
+			   <div align="center"><img src="banner1.png" height="100" width="400"> 
 			   <a href="index3.php"><img src="knapp1.png"/></a>
 						<a href="index3.php"><img src="knapp2.png"/><a/>
 						<a href="index3.php"><img src="knapp3.png"/></a>
@@ -27,11 +37,12 @@
 
 <Registrera knappen>
 <form action="input.php" method="post">
-AnvÃ¤ndarnamn<br>
+Användarnamn<br>
 <input type="text" name="myUser"><br>		
-LÃ¶senord<br>
+Lösenord<br>
 <input type="password" name="myPassword"><br>
 <input type="submit" value="Registrera"><br>
+
 <ul>
 <div>
 </ul>
@@ -42,13 +53,13 @@ LÃ¶senord<br>
 				<hr size="2" width="100%" align="center"> 
                 <div id="info">
 				<h1 class="dokument-item-header"> Webbsidans rubrik</h1>
-				<p class="info">Inledning pÃ¥ webbsidan.</p>
+				<p class="info">Inledning på webbsidan.</p>
 </div>
 </div>
 
 
 			<div id="footer">
-				<p> &copy; 2013 Ditt namn hÃ¤r. Detta Ã¤r en fotnot# 
+				<p> &copy; 2013 Ditt namn här. Detta är en fotnot# 
 				</p>
 			</div>
         </div>
